@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Maps Project</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/fav_stores.js"></script>
+        <script src="js/index.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=????&callback=initMap">
+        </script>
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    </head>
+    <body style="position: relative;">
+        <div class="title">Store Locator</div>
+        <div class="search-container">
+            <div class="search">
+                <input id="eir-code-input" type="text" placeholder="Enter Eircode"/>
+                <i class="fas fa-search" onclick='searchStores()'></i>
+            </div>
+        </div>
+        <div class="store-list-container">
+            <div class="store-list"></div>
+        </div>
+        </div>
+        <div id="map"></div>
+    </body>
+</html>
